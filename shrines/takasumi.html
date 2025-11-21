@@ -68,8 +68,8 @@ const shrineData = [
   },
   {
     name: "高住神社",
-    lat: 33.641941,
-    lng: 130.800344,
+    lat: 33.484366358934416,
+    lng: 130.9329599722248,
     page: "../shrines/takasumi.html",
     thumb: "../takasumi/1.jpg"
   },
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ★ 愛宕神社を中心に表示
 const map = L.map("map-atago", {
   scrollWheelZoom: false,   
-}).setView([33.641941, 130.800344], 10);
+}).setView([33.484366358934416, 130.9329599722248], 10);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
