@@ -91,18 +91,7 @@
     font-size:13px; color:var(--muted);
   }
   
-  /* -----------------------------------
-     Masonry
-  ----------------------------------- */
-  main{padding:22px 18px 60px}
-  
-  .masonry{
-    column-gap: var(--gap);
-    column-count: 4;
-  }
-  @media(max-width:1024px){ .masonry{ column-count: 2; } }
-  @media(max-width:720px){  .masonry{ column-count: 2; } }
-  @media(max-width:480px){  .masonry{ column-count: 1; } }
+
   
   /* -----------------------------------
      Tile
@@ -300,7 +289,7 @@
 /* スマホでも2列のままにするなら以下も追加 */
 @media(max-width:480px){
   .masonry {
-    column-count: 2 !important;
+    column-count: 1 !important;
   }
 }
 
@@ -365,9 +354,21 @@
 
 /* map.html 専用のマップサイズ */
 #big-map {
-  width: 100%;
-  height: 650px;
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  margin: 20px auto;
 }
+
+@media (max-width: 600px) {
+  #big-map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+
+
 
 /* ------------------------------------
    Leaflet Popup Custom (神社カード)
